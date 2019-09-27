@@ -18,9 +18,7 @@ public class UserController {
     public ModelAndView createObject(){
 
         ApplicationContext context= new AnnotationConfigApplicationContext("com.stackroute");
-        System.out.println("Config");
         User user=context.getBean("user",User.class);
-        System.out.println(user);
         ModelAndView modelAndView=new ModelAndView("iindex");
         modelAndView.addObject("user",user.getName());
 

@@ -9,8 +9,8 @@ import org.springframework.context.annotation.Configuration;
 public class config {
 
     @Bean("user")
-    public User user(User user){
-        return new User("deepak");
+    public User user(){
+        return new User("poorvi");
     }
 
 }
